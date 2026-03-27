@@ -1,0 +1,22 @@
+---
+import { siteConfig } from "../config/site";
+---
+
+<footer class="site-footer">
+  <div>
+    <p class="footer-title">{siteConfig.siteTitle}</p>
+    <p class="footer-copy">
+      Writing and project notes on machine learning, signals, systems, and technical work that has to perform in the real world.
+    </p>
+  </div>
+
+  <div class="footer-links">
+    {
+      siteConfig.socialLinks.map((item) => (
+        <a href={item.href} target="_blank" rel="noreferrer">
+          {item.label}
+        </a>
+      ))
+    }
+  </div>
+</footer>

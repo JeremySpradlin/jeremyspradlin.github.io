@@ -1,0 +1,132 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../utils/paths";
+---
+
+<BaseLayout title="Resume" description="Professional summary and resume access.">
+  <section class="section page-intro reveal" data-reveal>
+    <p class="eyebrow">Professional Profile</p>
+    <h1>Resume</h1>
+    <p>
+      Accomplished data scientist, machine learning engineer, technical trainer, and Marine Corps
+      veteran with experience across AI, signals intelligence, IoT, and distributed systems.
+    </p>
+  </section>
+
+  <section class="section resume-signal-grid">
+    <article class="signal-card reveal" data-reveal>
+      <p class="eyebrow">Experience</p>
+      <h2>20+ Years</h2>
+      <p>AI, signals intelligence, field systems, technical training, and operational delivery.</p>
+    </article>
+
+    <article class="signal-card reveal" data-reveal>
+      <p class="eyebrow">Clearance</p>
+      <h2>Top Secret/SCI</h2>
+      <p>Experience in mission-driven environments where speed, reliability, and trust matter.</p>
+    </article>
+
+    <article class="signal-card reveal" data-reveal>
+      <p class="eyebrow">Writing</p>
+      <h2>Published</h2>
+      <p>Technical writing aimed at making data science and AI more legible and practical.</p>
+    </article>
+  </section>
+
+  <section class="section two-column">
+    <div class="panel resume-card reveal" data-reveal>
+      <p class="eyebrow">Core Skills</p>
+      <h2>Strengths</h2>
+      <ul class="highlight-list">
+        <li>Python, Go, JavaScript, SQL, Bash, and production-oriented data workflows</li>
+        <li>Machine learning, NLP, computer vision, deep learning, and signal processing</li>
+        <li>Docker, Kubernetes, CI/CD, cloud platforms, and low-latency deployment patterns</li>
+      </ul>
+    </div>
+
+    <div class="panel resume-card reveal" data-reveal>
+      <p class="eyebrow">Impact</p>
+      <h2>Experience Highlights</h2>
+      <ul class="highlight-list">
+        <li>Built distributed image-analysis and anomaly-detection systems for real-time inference</li>
+        <li>Led field testing, customer demonstrations, and technical training for high-stakes systems</li>
+        <li>Published practical writing on data science and AI for broader technical audiences</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section two-column">
+    <div class="panel resume-card reveal" data-reveal>
+      <p class="eyebrow">Timeline</p>
+      <h2>Recent Roles</h2>
+      <ul class="highlight-list">
+        <li>Machine Learning Engineer, Knowledge Bridge International, 2021 to present</li>
+        <li>Technical Instructor II, Johnson Controls, 2018 to 2020</li>
+        <li>Technical Operations Specialist II, SR Technologies, 2009 to 2018</li>
+        <li>United States Marine Corps, Corporal, 2001 to 2006</li>
+      </ul>
+    </div>
+
+    <div class="panel resume-card reveal" data-reveal>
+      <p class="eyebrow">Background</p>
+      <h2>Credentials</h2>
+      <ul class="highlight-list">
+        <li>Lambda School Data Science Bootcamp</li>
+        <li>CompTIA A+ and Network+ training through New Horizons</li>
+        <li>Top Secret/SCI security clearance</li>
+        <li>Published in Towards Data Science and The Startup</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="panel resume-card reveal" data-reveal>
+      <p class="eyebrow">Selected Writing</p>
+      <h2>Publications</h2>
+      <ul class="highlight-list">
+        <li>“So You Wanna Data Science?”</li>
+        <li>“Using Data Science to Influence Immigration Policy”</li>
+        <li>“Interplanetary Forecasts”</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="panel accent-panel resume-card reveal" data-reveal>
+      <p class="eyebrow">Resume PDF</p>
+      <h2>Full Resume</h2>
+      <p>
+        The latest PDF resume is included in the site and available to view or download directly.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href={withBase("/resume.pdf")} target="_blank" rel="noreferrer">
+          View PDF
+        </a>
+        <a class="button" href={withBase("/resume.pdf")} download>
+          Download PDF
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const revealItems = Array.from(document.querySelectorAll("[data-reveal]"));
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    for (const item of revealItems) item.classList.add("is-visible");
+  } else {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.18, rootMargin: "0px 0px -8% 0px" },
+    );
+
+    for (const item of revealItems) observer.observe(item);
+  }
+</script>

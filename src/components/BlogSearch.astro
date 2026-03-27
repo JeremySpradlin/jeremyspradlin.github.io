@@ -1,0 +1,27 @@
+<div class="search-shell">
+  <label class="search-label" for="blog-search">Search posts</label>
+  <input
+    id="blog-search"
+    type="search"
+    class="search-input"
+    placeholder="Filter by title or summary"
+    autocomplete="off"
+  />
+</div>
+
+<script>
+  const input = document.querySelector("#blog-search");
+  const cards = Array.from(document.querySelectorAll(".post-card"));
+
+  if (input instanceof HTMLInputElement) {
+    input.addEventListener("input", () => {
+      const query = input.value.trim().toLowerCase();
+
+      for (const card of cards) {
+        const text = card.textContent?.toLowerCase() ?? "";
+        const isVisible = text.includes(query);
+        card.toggleAttribute("hidden", !isVisible);
+      }
+    });
+  }
+</script>

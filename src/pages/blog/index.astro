@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import BlogSearch from "../../components/BlogSearch.astro";
+import PostList from "../../components/PostList.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<BaseLayout title="Blog" description="Writing on data science, software, and practical technical work.">
+  <section class="section page-intro">
+    <p class="eyebrow">Archive</p>
+    <h1>Blog</h1>
+    <p>
+      A running set of notes on data science, software engineering, and the technical details worth
+      slowing down to examine.
+    </p>
+  </section>
+
+  <section class="section">
+    <BlogSearch />
+    <PostList posts={posts} />
+  </section>
+</BaseLayout>

@@ -1,0 +1,20 @@
+---
+import ProjectGrid from "../components/ProjectGrid.astro";
+import { projects } from "../data/projects";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Projects" description="Selected data science and software projects.">
+  <section class="section page-intro">
+    <p class="eyebrow">Selected Work</p>
+    <h1>Projects</h1>
+    <p>
+      A growing collection of technical projects, from applied analytics workflows to model
+      evaluation tools and software experiments.
+    </p>
+  </section>
+
+  <section class="section">
+    <ProjectGrid projects={projects} />
+  </section>
+</BaseLayout>

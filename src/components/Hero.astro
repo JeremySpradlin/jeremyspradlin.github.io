@@ -1,0 +1,31 @@
+---
+import { siteConfig } from "../config/site";
+import { withBase } from "../utils/paths";
+---
+
+<section class="hero">
+  <div class="hero-copy">
+    <div class="hero-main">
+      <p class="eyebrow">Data Scientist · ML Engineer · Technical Trainer</p>
+      <h1 class="hero-site-title">{siteConfig.siteTitle}</h1>
+      <p class="hero-name">Hi, I'm {siteConfig.authorName}.</p>
+      <p class="hero-tagline">{siteConfig.tagline}</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href={withBase("/blog/")}>Read the Blog</a>
+        <a class="button" href={withBase("/projects/")}>View Projects</a>
+        <a class="button" href={withBase("/resume/")}>Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-side">
+      <div class="hero-focus">
+        <p class="hero-card-label">Currently Focused On</p>
+        <ul>
+          <li>Computer vision and multimodal ML pipelines for mission-driven systems</li>
+          <li>Distributed inference, MLOps, and cloud deployment workflows</li>
+          <li>Clear technical communication for both hands-on builders and stakeholders</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
