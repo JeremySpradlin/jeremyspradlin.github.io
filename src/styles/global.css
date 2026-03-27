@@ -527,7 +527,7 @@ code {
 
 .blog-archive-header {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(22rem, 38rem);
+  grid-template-columns: minmax(0, 1fr) minmax(24rem, 30rem);
   align-items: start;
   gap: 2rem;
   margin-bottom: 1.75rem;
