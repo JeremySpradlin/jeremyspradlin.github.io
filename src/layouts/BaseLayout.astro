@@ -9,9 +9,15 @@ type Props = {
   title?: string;
   description?: string;
   showHeader?: boolean;
+  headerBackHref?: string;
 };
 
-const { title, description = siteConfig.description, showHeader = true } = Astro.props;
+const {
+  title,
+  description = siteConfig.description,
+  showHeader = true,
+  headerBackHref,
+} = Astro.props;
 const pageTitle = title
   ? `${title} | ${siteConfig.siteTitle}`
   : `${siteConfig.siteTitle} | ${siteConfig.authorName}`;
@@ -31,7 +37,7 @@ const pageTitle = title
   <body>
     <div class="site-shell">
       <div class="site-backdrop"></div>
-      {showHeader && <Header />}
+      {showHeader && <Header backHref={headerBackHref} />}
       <main class="site-main">
         <slot />
       </main>
