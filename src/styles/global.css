@@ -522,12 +522,29 @@ code {
 }
 
 .blog-archive {
-  padding-top: 1.25rem;
+  padding-top: 1.5rem;
+}
+
+.blog-archive-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.blog-page-intro {
+  padding-top: 0;
+}
+
+.blog-page-intro h1 {
+  margin-bottom: 0.75rem;
 }
 
 .search-shell-compact {
   width: min(100%, 26rem);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
   padding: 0;
   border: 0;
   background: transparent;
@@ -708,6 +725,11 @@ code {
   .post-list.compact,
   .site-footer {
     grid-template-columns: 1fr;
+  }
+
+  .blog-archive-header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .hero-copy {
