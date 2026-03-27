@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import { withBase } from "../utils/paths";
 
 type Props = {
   title: string;
@@ -13,19 +14,33 @@ const { title, description, date } = Astro.props;
 <BaseLayout title={title} description={description}>
   <article class="post-shell">
     <header class="post-header">
-      <p class="eyebrow">Blog Post</p>
+      <p class="eyebrow">From the Blog</p>
       <h1>{title}</h1>
-      <p class="post-date">
-        {date.toLocaleDateString("en-US", {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        })}
-      </p>
-      <p class="post-summary">{description}</p>
+      <div class="post-meta">
+        <p class="post-date">
+          {date.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </p>
+        <span class="post-meta-divider"></span>
+        <p class="post-kicker">Signal and Noise</p>
+      </div>
+      <p class="post-summary lead">{description}</p>
     </header>
     <div class="post-content">
       <slot />
     </div>
+    <footer class="post-footer">
+      <div class="post-footer-copy">
+        <p class="eyebrow">Continue Reading</p>
+        <p>
+          More writing on applied machine learning, systems, and the technical work behind real
+          projects.
+        </p>
+      </div>
+      <a class="button button-primary" href={withBase("/blog/")}>Back to Blog</a>
+    </footer>
   </article>
 </BaseLayout>

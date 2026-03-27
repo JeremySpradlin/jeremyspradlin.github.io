@@ -1,6 +1,6 @@
 ---
 title: "Designing an NLP Pipeline for Immigration Case Analysis"
-date: "2021-2-4"
+date: "2021-02-04"
 summary: "A look at building a document-processing pipeline for asylum case analysis, and the technical and ethical challenges of using data science in immigration policy work."
 featured: false
 ---
