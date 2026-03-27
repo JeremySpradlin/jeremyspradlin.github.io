@@ -33,7 +33,9 @@ jobs:
 
       - name: Set base path
         run: |
-          if [ "${{ github.event.repository.name }}" = "${{ github.repository_owner }}.github.io" ]; then
+          REPO_NAME="$(echo "${{ github.event.repository.name }}" | tr '[:upper:]' '[:lower:]')"
+
+          if [[ "$REPO_NAME" == *.github.io ]]; then
             echo "BASE_PATH=/" >> "$GITHUB_ENV"
           else
             echo "BASE_PATH=/${{ github.event.repository.name }}/" >> "$GITHUB_ENV"
