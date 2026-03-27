@@ -542,7 +542,7 @@ code {
 }
 
 .search-shell-compact {
-  width: min(100%, 32rem);
+  width: min(100%, 38rem);
   margin-bottom: 0;
   margin-top: 0.5rem;
   padding: 0;
