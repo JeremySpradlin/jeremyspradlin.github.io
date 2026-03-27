@@ -521,16 +521,33 @@ code {
   border-radius: var(--radius-md);
 }
 
+.blog-archive {
+  padding-top: 1.25rem;
+}
+
+.search-shell-compact {
+  width: min(100%, 26rem);
+  margin-bottom: 1.5rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
 .search-label {
+  margin-bottom: 0.1rem;
   color: var(--text-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
 }
 
 .search-input {
   width: 100%;
-  padding: 0.95rem 1rem;
+  padding: 0.85rem 1rem;
   border: 1px solid var(--surface-border);
-  border-radius: var(--radius-sm);
-  background: rgba(3, 8, 16, 0.8);
+  border-radius: 999px;
+  background: rgba(7, 14, 27, 0.82);
   color: var(--text);
 }
 
