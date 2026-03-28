@@ -24,6 +24,11 @@ const posts = (await getCollection("blog")).sort(
       <BlogSearch />
     </div>
 
+    <div class="blog-grid-heading">
+      <p class="eyebrow">Latest Posts</p>
+      <span class="blog-grid-line"></span>
+    </div>
+
     <PostList posts={posts} />
   </section>
 </BaseLayout>

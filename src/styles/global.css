@@ -393,12 +393,22 @@ code {
 
 .post-card {
   padding: 1.35rem;
+  border: 1px solid transparent;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
 }
 
 .post-card h3,
 .project-card h3 {
   margin: 0.35rem 0 0.8rem;
   color: var(--heading);
+}
+
+.post-card h3 a {
+  color: inherit;
 }
 
 .post-card p,
@@ -415,8 +425,22 @@ code {
   color: var(--text-muted);
 }
 
+.post-card-date {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
 .text-link {
   color: var(--accent-strong);
+}
+
+.post-card:hover {
+  border-color: rgba(144, 198, 255, 0.22);
+  box-shadow:
+    0 22px 60px rgba(0, 0, 0, 0.28),
+    0 0 0 1px rgba(144, 198, 255, 0.06);
+  background: linear-gradient(180deg, rgba(88, 166, 255, 0.06), rgba(12, 23, 41, 0.88));
 }
 
 .project-grid {
@@ -541,6 +565,27 @@ code {
   margin-bottom: 0.75rem;
 }
 
+.blog-page-intro p:last-child {
+  max-width: 32rem;
+}
+
+.blog-grid-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog-grid-heading .eyebrow {
+  margin: 0;
+}
+
+.blog-grid-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(88, 166, 255, 0.28), transparent 70%);
+}
+
 .search-shell-compact {
   width: 100%;
   margin-bottom: 0;
@@ -552,9 +597,23 @@ code {
   backdrop-filter: none;
 }
 
+.search-field {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  pointer-events: none;
+}
+
 .search-input {
   width: 100%;
-  padding: 0.85rem 1rem;
+  padding: 0.85rem 1rem 0.85rem 2.35rem;
   border: 1px solid var(--surface-border);
   border-radius: 999px;
   background: rgba(7, 14, 27, 0.82);
