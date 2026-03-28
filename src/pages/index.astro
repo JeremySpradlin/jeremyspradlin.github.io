@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 import Hero from "../components/Hero.astro";
 import PostList from "../components/PostList.astro";
 import ProjectGrid from "../components/ProjectGrid.astro";
-import { projects } from "../data/projects";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { withBase } from "../utils/paths";
 
@@ -12,7 +11,9 @@ const posts = (await getCollection("blog"))
   .slice(0, 3);
 
 const [heroContent] = await getCollection("home");
-const featuredProjects = projects.filter((project) => project.featured).slice(0, 3);
+const featuredProjects = (await getCollection("projects"))
+  .filter((project) => project.data.featured)
+  .slice(0, 3);
 ---
 
 <BaseLayout showHeader={false}>

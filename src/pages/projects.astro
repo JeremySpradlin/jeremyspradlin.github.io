@@ -1,7 +1,9 @@
 ---
+import { getCollection } from "astro:content";
 import ProjectGrid from "../components/ProjectGrid.astro";
-import { projects } from "../data/projects";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const projects = await getCollection("projects");
 ---
 
 <BaseLayout title="Projects" description="Selected data science and software projects.">

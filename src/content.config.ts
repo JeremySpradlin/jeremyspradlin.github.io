@@ -28,4 +28,18 @@ const home = defineCollection({
   }),
 });
 
-export const collections = { blog, home };
+const projects = defineCollection({
+  loader: glob({
+    pattern: "**/*.md",
+    base: "./src/content/projects",
+  }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    image: z.string(),
+    githubUrl: z.string().url(),
+    featured: z.boolean().default(false),
+  }),
+});
+
+export const collections = { blog, home, projects };
