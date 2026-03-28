@@ -801,9 +801,11 @@ code {
 }
 
 .post-content img {
-  width: min(100%, 56rem);
-  max-width: calc(100vw - 2.5rem);
+  width: min(56rem, calc(100vw - 2.5rem));
+  max-width: none;
   margin: 1.8rem 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
   border: 1px solid var(--surface-border);
   border-radius: calc(var(--radius-md) + 2px);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
