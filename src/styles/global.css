@@ -801,7 +801,8 @@ code {
 }
 
 .post-content img {
-  width: 100%;
+  width: min(100%, 56rem);
+  max-width: calc(100vw - 2.5rem);
   margin: 1.8rem 0;
   border: 1px solid var(--surface-border);
   border-radius: calc(var(--radius-md) + 2px);
