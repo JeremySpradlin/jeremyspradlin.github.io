@@ -226,8 +226,11 @@ code {
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
   gap: 1.5rem;
   align-items: end;
-  padding: 2.75rem;
-  border-radius: var(--radius-lg);
+  padding: 1.25rem 0 1.5rem;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .hero-main {
