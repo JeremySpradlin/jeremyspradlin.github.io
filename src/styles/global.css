@@ -207,7 +207,7 @@ code {
 
 .hero {
   width: min(calc(100% - 2rem), var(--max-width));
-  margin: 1.5rem auto 0;
+  margin: 1rem auto 0;
 }
 
 .hero-copy,
@@ -432,6 +432,10 @@ code {
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 1.15rem;
+}
+
+.hero + .section {
+  padding-top: 0.75rem;
 }
 
 .section h2,
