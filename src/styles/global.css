@@ -225,7 +225,7 @@ code {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
   gap: 1.5rem;
-  align-items: end;
+  align-items: start;
   padding: 1.25rem 0 1.5rem;
   border: 0;
   background: transparent;
@@ -239,7 +239,7 @@ code {
 
 .hero-side {
   display: flex;
-  align-items: end;
+  align-items: start;
   justify-content: flex-end;
 }
 
