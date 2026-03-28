@@ -29,8 +29,8 @@ const { heroContent } = Astro.props;
         <p class="hero-card-label">{heroContent.data.focusTitle}</p>
         <div class="hero-focus-list">
           {
-            heroContent.data.focusItems.map((item) => (
-              <div class="hero-focus-item">
+            heroContent.data.focusItems.map((item, index) => (
+              <div class:list={["hero-focus-item", index === 0 && "hero-focus-item-featured"]}>
                 <span class="hero-focus-dot"></span>
                 <p>{item}</p>
               </div>
