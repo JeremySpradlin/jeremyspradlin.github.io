@@ -12,8 +12,8 @@ export const siteConfig = {
     { label: "Resume", href: "/resume/" },
   ],
   socialLinks: [
-    { label: "GitHub", href: "https://github.com/" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/" },
+    { label: "GitHub", href: "https://github.com/JeremySpradlin" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/jkspradlin/" },
   ],
 };
 
