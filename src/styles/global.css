@@ -731,7 +731,7 @@ code {
 }
 
 .post-content {
-  max-width: 72ch;
+  max-width: 78ch;
   width: 100%;
 }
 
@@ -801,7 +801,7 @@ code {
 }
 
 .post-content img {
-  width: min(56rem, calc(100vw - 2.5rem));
+  width: min(52rem, calc(100vw - 3rem));
   max-width: none;
   margin: 1.8rem 0;
   margin-left: 50%;
@@ -824,7 +824,7 @@ code {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  max-width: 72ch;
+  max-width: 78ch;
   width: 100%;
   margin-top: 3rem;
   padding-top: 1.5rem;
