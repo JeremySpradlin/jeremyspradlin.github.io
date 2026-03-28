@@ -95,12 +95,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/Anthropic Meets OpenAI.md",
+                "file": "home/hero.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Anthropic Meets OpenAI"
+              "title": "hero"
             }
           }
         ],
@@ -177,7 +177,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/Anthropic Meets OpenAI.md",
+                "file": "home/hero.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Anthropic Meets OpenAI"
+              "title": "Backlinks for hero"
             }
           },
           {
@@ -196,12 +196,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/Anthropic Meets OpenAI.md",
+                "file": "home/hero.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Anthropic Meets OpenAI"
+              "title": "Outgoing links from hero"
             }
           },
           {
@@ -239,13 +239,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/Anthropic Meets OpenAI.md",
+                "file": "home/hero.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Anthropic Meets OpenAI"
+              "title": "Outline of hero"
             }
           }
         ]
@@ -268,10 +268,10 @@
   },
   "active": "5c07f666a90b9c7a",
   "lastOpenFiles": [
+    "blog/Anthropic Meets OpenAI.md",
     "blog/attachments/Pasted image 20260328004537.png",
     "blog/attachments/Pasted image 20260328002834.png",
     "blog/Dont let your AI write spaghetti code.md",
-    "blog/Anthropic Meets OpenAI.md",
     "blog/attachments/Pasted image 20260328001422.png",
     "blog/Snake on a Plane.md",
     "blog/attachments/Pasted image 20260327235147.png",
@@ -287,7 +287,6 @@
     "projects/signal-explorer.md",
     "projects/model-audit-notebook.md",
     "projects",
-    "blog/attachments/Pasted image 20260327222958.png",
     "Blog-base-ordering.base",
     "blog/Sunspotting.md",
     "blog/nlp-immigration-analysis.md",
