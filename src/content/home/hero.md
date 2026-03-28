@@ -4,7 +4,7 @@ greeting: Hi, I'm Jeremy!
 tagline: Applied machine learning, signals intelligence, and technical writing from a practitioner's point of view.
 focusTitle: Currently Focused On
 focusItems:
-  - Computer vision and ML systems for mission-driven environments
-  - Production-minded Python workflows, infrastructure, and developer tooling
-  - Technical writing that makes complex systems easier to use and trust
+  - Computer vision and ML systems for surveillance and mission-driven environments
+  - Rapid AI prototyping for real-world tools and workflows
+  - Applied data science that turns messy signals into useful decisions
 ---
