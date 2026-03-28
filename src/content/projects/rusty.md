@@ -4,6 +4,7 @@ description: A quirky terminal-based AI companion written in Rust, with interact
 image: /images/projects/project-forecast.svg
 githubUrl: https://github.com/JeremySpradlin/Rusty
 featured: true
+order: 3
 status: Prototype
 tech:
   - Rust

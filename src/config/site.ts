@@ -1,6 +1,7 @@
 export const siteConfig = {
   siteTitle: "Signal and Noise",
   authorName: "Jeremy Spradlin",
+  siteUrl: "https://jeremyspradlin.github.io",
   tagline: "Applied machine learning, signals intelligence, and technical writing from a practitioner’s point of view.",
   description:
     "A dark, blog-first portfolio for writing about data science, machine learning, signals intelligence, and professional experience.",

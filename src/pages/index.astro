@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
 import Hero from "../components/Hero.astro";
 import PostList from "../components/PostList.astro";
 import ProjectGrid from "../components/ProjectGrid.astro";
@@ -10,9 +10,10 @@ const posts = (await getCollection("blog"))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 
-const [heroContent] = await getCollection("home");
+const heroContent = await getEntry("home", "hero");
 const featuredProjects = (await getCollection("projects"))
   .filter((project) => project.data.featured)
+  .sort((a, b) => a.data.order - b.data.order || a.data.title.localeCompare(b.data.title))
   .slice(0, 3);
 ---
 

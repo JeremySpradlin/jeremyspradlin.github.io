@@ -21,6 +21,7 @@ const {
 const pageTitle = title
   ? `${title} | ${siteConfig.siteTitle}`
   : `${siteConfig.siteTitle} | ${siteConfig.authorName}`;
+const canonicalUrl = new URL(Astro.url.pathname, siteConfig.siteUrl).toString();
 ---
 
 <!doctype html>
@@ -33,6 +34,15 @@ const pageTitle = title
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:site_name" content={siteConfig.siteTitle} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
   </head>
   <body>
     <div class="site-shell">

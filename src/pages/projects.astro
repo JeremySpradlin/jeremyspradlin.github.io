@@ -4,6 +4,9 @@ import ProjectGrid from "../components/ProjectGrid.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const projects = await getCollection("projects");
+const sortedProjects = projects.sort(
+  (a, b) => a.data.order - b.data.order || a.data.title.localeCompare(b.data.title),
+);
 ---
 
 <BaseLayout title="Projects" description="Selected data science and software projects.">
@@ -17,6 +20,6 @@ const projects = await getCollection("projects");
   </section>
 
   <section class="section">
-    <ProjectGrid projects={projects} />
+    <ProjectGrid projects={sortedProjects} />
   </section>
 </BaseLayout>

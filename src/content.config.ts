@@ -39,6 +39,7 @@ const projects = defineCollection({
     image: z.string(),
     githubUrl: z.string().url(),
     featured: z.boolean().default(false),
+    order: z.number().int().default(999),
     status: z.enum(["Active", "Prototype", "In Progress", "Archived"]).default("Active"),
     tech: z.array(z.string()).default([]),
   }),

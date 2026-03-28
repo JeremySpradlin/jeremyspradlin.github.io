@@ -4,6 +4,7 @@ description: A full-stack app for orchestrating AI-to-AI conversations between O
 image: /images/projects/project-audit.svg
 githubUrl: https://github.com/JeremySpradlin/Parley
 featured: true
+order: 1
 status: Active
 tech:
   - FastAPI

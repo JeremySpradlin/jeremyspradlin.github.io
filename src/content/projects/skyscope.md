@@ -4,6 +4,7 @@ description: A local ADS-B viewer that polls dump1090-fa and renders nearby airc
 image: /images/projects/project-signal.svg
 githubUrl: https://github.com/JeremySpradlin/SkyScope
 featured: true
+order: 2
 status: Active
 tech:
   - Three.js
