@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.path.contains("blog/")
+    order:
+      - title
+      - date
+      - summary
+      - featured
+    sort:
+      - property: date
+        direction: DESC

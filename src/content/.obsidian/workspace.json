@@ -11,17 +11,30 @@
             "id": "2977b54079045fcf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "home/hero.md",
-                "mode": "source",
-                "source": false
+                "file": "Blog-base-ordering.base",
+                "viewName": "Table"
               },
-              "icon": "lucide-file",
-              "title": "hero"
+              "icon": "lucide-table",
+              "title": "Blog-base-ordering"
+            }
+          },
+          {
+            "id": "5f6c2aa64cf58898",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Blog-base-ordering.base",
+                "viewName": "Table"
+              },
+              "icon": "lucide-table",
+              "title": "Blog-base-ordering"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home/hero.md",
+                "file": "Blog-base-ordering.base",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for hero"
+              "title": "Backlinks for Blog-base-ordering"
             }
           },
           {
@@ -113,12 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "home/hero.md",
+                "file": "Blog-base-ordering.base",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from hero"
+              "title": "Outgoing links from Blog-base-ordering"
             }
           },
           {
@@ -156,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "home/hero.md",
+                "file": "Blog-base-ordering.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of hero"
+              "title": "Outline of Blog-base-ordering"
             }
           }
         ]
@@ -183,16 +196,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "2977b54079045fcf",
+  "active": "5f6c2aa64cf58898",
   "lastOpenFiles": [
-    "templates/blogpost.md",
+    "blog/Sunspotting.md",
+    "blog/nlp-immigration-analysis.md",
+    "blog/attachments/Pasted image 20260327214429.png",
+    "blog/attachments/Pasted image 20260327214404.png",
+    "blog/attachments/Pasted image 20260327214319.png",
+    "blog/attachments/Pasted image 20260327214036.png",
+    "blog/attachments/Pasted image 20260327214000.png",
+    "blog/attachments/Pasted image 20260327213632.png",
+    "blog/attachments",
+    "Blog-base-ordering.base",
     "home/hero.md",
+    "templates/blogpost.md",
     "blog/welcome-to-signal-and-noise.md",
     "blog/notes-on-project-communication.md",
     "home/hero.yaml",
     "home",
     "blog/building-a-better-analysis-workflow.md",
-    "blog/nlp-immigration-analysis.md",
     "blog/A new post.md"
   ]
 }
