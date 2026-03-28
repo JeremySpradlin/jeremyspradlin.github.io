@@ -465,6 +465,7 @@ code {
 
 .post-card-link {
   display: block;
+  height: 100%;
 }
 
 .post-card,
@@ -473,6 +474,9 @@ code {
 }
 
 .post-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 1.35rem;
   border: 1px solid transparent;
   transition:
@@ -497,6 +501,13 @@ code {
   line-height: 1.8;
 }
 
+.post-card p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
 .post-card-date,
 .post-date {
   color: var(--text-muted);
@@ -510,6 +521,11 @@ code {
 
 .text-link {
   color: var(--accent-strong);
+}
+
+.post-card .text-link {
+  margin-top: auto;
+  padding-top: 0.9rem;
 }
 
 .post-card:hover {
