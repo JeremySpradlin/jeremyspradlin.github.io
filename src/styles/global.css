@@ -386,6 +386,10 @@ code {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.post-card-link {
+  display: block;
+}
+
 .post-card,
 .project-card {
   border-radius: var(--radius-md);
@@ -405,10 +409,6 @@ code {
 .project-card h3 {
   margin: 0.35rem 0 0.8rem;
   color: var(--heading);
-}
-
-.post-card h3 a {
-  color: inherit;
 }
 
 .post-card p,
