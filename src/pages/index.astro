@@ -11,11 +11,12 @@ const posts = (await getCollection("blog"))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 
+const [heroContent] = await getCollection("home");
 const featuredProjects = projects.filter((project) => project.featured).slice(0, 3);
 ---
 
 <BaseLayout showHeader={false}>
-  <Hero />
+  <Hero heroContent={heroContent} />
 
   <section class="section">
     <div class="section-heading">

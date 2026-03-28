@@ -291,7 +291,7 @@ code {
 
 .hero-focus {
   max-width: 25rem;
-  padding: 1.1rem 1.25rem;
+  padding: 1.15rem 1.1rem;
   background: linear-gradient(180deg, rgba(88, 166, 255, 0.08), rgba(255, 255, 255, 0.01));
   border: 1px solid var(--surface-border);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
@@ -306,7 +306,37 @@ code {
   font-size: 0.8rem;
 }
 
-.hero-card ul,
+.hero-focus-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.hero-focus-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.8rem;
+  align-items: start;
+  padding: 0.7rem 0.75rem;
+  border: 1px solid rgba(144, 198, 255, 0.09);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.hero-focus-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-top: 0.5rem;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 18px rgba(88, 166, 255, 0.42);
+}
+
+.hero-focus-item p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.45;
+}
+
 .highlight-list {
   margin: 0;
   padding-left: 1.1rem;
