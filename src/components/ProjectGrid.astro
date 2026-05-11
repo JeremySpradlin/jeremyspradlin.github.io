@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { withBase } from "../utils/paths";
+import { Image } from "astro:assets";
 
 type Props = {
   projects: CollectionEntry<"projects">[];
@@ -13,8 +13,8 @@ const { projects } = Astro.props;
   {
     projects.map((project) => (
       <article class="project-card">
-        <img
-          src={withBase(project.data.image)}
+        <Image
+          src={project.data.image}
           alt={`${project.data.title} preview`}
           loading="lazy"
         />

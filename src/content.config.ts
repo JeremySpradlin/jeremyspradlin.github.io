@@ -33,16 +33,17 @@ const projects = defineCollection({
     pattern: "**/*.md",
     base: "./src/content/projects",
   }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    image: z.string(),
-    githubUrl: z.string().url(),
-    featured: z.boolean().default(false),
-    order: z.number().int().default(999),
-    status: z.enum(["Active", "Prototype", "In Progress", "Archived"]).default("Active"),
-    tech: z.array(z.string()).default([]),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      image: image(),
+      githubUrl: z.string().url(),
+      featured: z.boolean().default(false),
+      order: z.number().int().default(999),
+      status: z.enum(["Active", "Prototype", "In Progress", "Archived"]).default("Active"),
+      tech: z.array(z.string()).default([]),
+    }),
 });
 
 export const collections = { blog, home, projects };
