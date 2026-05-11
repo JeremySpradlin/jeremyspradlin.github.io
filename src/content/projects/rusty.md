@@ -1,7 +1,7 @@
 ---
 title: Rusty
 description: A quirky terminal-based AI companion written in Rust, with interactive chat, configurable personality, and smart code-block copying built directly into the CLI experience.
-image: ./attachments/project-forecast.svg
+image: ./attachments/Rusty.png
 githubUrl: https://github.com/JeremySpradlin/Rusty
 featured: true
 order: 3
@@ -12,3 +12,4 @@ tech:
   - Terminal UI
   - Developer Tools
 ---
+![](attachments/Rusty.png)
