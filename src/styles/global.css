@@ -568,7 +568,7 @@ code {
 }
 
 .project-card img {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 1168 / 784;
   object-fit: cover;
   border-bottom: 1px solid var(--surface-border);
 }
