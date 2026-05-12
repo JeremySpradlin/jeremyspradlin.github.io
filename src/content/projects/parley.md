@@ -4,6 +4,6 @@ description: A full-stack app for orchestrating AI-to-AI conversations between O
 image: ./attachments/Parley.png
 githubUrl: https://github.com/JeremySpradlin/Parley
 featured: true
-order: 1
+order: 4
 ---
 ![](attachments/Parley.png)
