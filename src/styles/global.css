@@ -568,9 +568,9 @@ code {
 }
 
 .project-card img {
+  display: block;
   width: 100%;
-  aspect-ratio: 1168 / 784;
-  object-fit: cover;
+  height: auto;
   border-bottom: 1px solid var(--surface-border);
 }
 
