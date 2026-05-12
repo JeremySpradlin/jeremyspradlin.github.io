@@ -5,12 +5,5 @@ image: ./attachments/Parley.png
 githubUrl: https://github.com/JeremySpradlin/Parley
 featured: true
 order: 1
-status: Active
-tech:
-  - FastAPI
-  - Next.js
-  - SSE
-  - OpenAI
-  - Anthropic
 ---
-![](./attachments/Parley.png)
+![](attachments/Parley.png)

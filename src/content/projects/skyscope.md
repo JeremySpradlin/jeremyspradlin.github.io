@@ -5,11 +5,5 @@ image: ./attachments/SkyScope.png
 githubUrl: https://github.com/JeremySpradlin/SkyScope
 featured: true
 order: 2
-status: Active
-tech:
-  - Three.js
-  - ADS-B
-  - dump1090-fa
-  - Visualization
 ---
 ![](attachments/SkyScope.png)

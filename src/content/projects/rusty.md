@@ -5,11 +5,5 @@ image: ./attachments/Rusty.png
 githubUrl: https://github.com/JeremySpradlin/Rusty
 featured: true
 order: 3
-status: Prototype
-tech:
-  - Rust
-  - CLI
-  - Terminal UI
-  - Developer Tools
 ---
 ![](attachments/Rusty.png)

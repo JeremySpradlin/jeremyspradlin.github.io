@@ -508,8 +508,7 @@ code {
     background 180ms ease;
 }
 
-.post-card h3,
-.project-card h3 {
+.post-card h3 {
   margin: 0.35rem 0 0.8rem;
   color: var(--heading);
 }
@@ -579,44 +578,6 @@ code {
   flex-direction: column;
   gap: 0.6rem;
   padding: 1rem 1.1rem;
-}
-
-.project-card-meta {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.project-status {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.28rem 0.7rem;
-  border: 1px solid rgba(255, 180, 84, 0.2);
-  border-radius: 999px;
-  color: var(--accent-secondary-strong);
-  background: rgba(255, 180, 84, 0.1);
-  font-size: 0.78rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.project-tech-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.project-tech-tag {
-  padding: 0.22rem 0.55rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: var(--text-muted);
-  font-size: 0.82rem;
-  line-height: 1.2;
 }
 
 .project-card .text-link {
