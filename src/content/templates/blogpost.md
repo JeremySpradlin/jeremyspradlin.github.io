@@ -1,6 +1,6 @@
 ---
-title: Article Title
-date: 2026-03-27
+title: <% tp.file.title %>
+date: <% tp.date.now("YYYY-MM-DD") %>
 summary: Article Summary
 featured: true
 ---
